@@ -1,0 +1,16 @@
+- Save settings about fullscreen.
+- Open previous/next file by "Left"/"Right" arrows.
+- Drag'N'Drop.
+- Single application.
+- Background color.
+- Render to PNG/JPG/etc.
+- About.
+- Draw page margins.
+- Thumbnails for Windows.
+- Thumbnails for Linux.
+- Settings (Scale) for each file, but only in file (Windows safe registry).
+- Settings: navigate by wheel and scale by ctrl+wheel or navigate by ctrl+wheel and scale by wheel.
+- Linux package.
+- Windows installer.
+- Different deploy dirs for win/linux/etc.
+- Symbian version.
