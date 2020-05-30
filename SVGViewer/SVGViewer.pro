@@ -11,6 +11,10 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets svg opengl
 TARGET = SVGViewer
 TEMPLATE = app
 
+VERSION = 0.1.0
+DEFINES += "APP_VERSION=\"\\\"$$VERSION\\\"\""
+
+
 CONFIG(release, debug|release) {
     BASEDESTDIR = ..\SVGViewer-deploy
     QMAKE_CXXFLAGS_RELEASE -= -O2
@@ -45,6 +49,7 @@ SOURCES += main.cpp\
            svgview.cpp
 
 HEADERS += mainwindow.h \
+           defines.h \
            svgview.h
 
 FORMS   += mainwindow.ui

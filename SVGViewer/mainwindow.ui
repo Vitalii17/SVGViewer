@@ -44,7 +44,7 @@
      <x>0</x>
      <y>0</y>
      <width>407</width>
-     <height>21</height>
+     <height>20</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuTr_SVG_Viewer">
@@ -54,7 +54,7 @@
     <addaction name="actionOpen"/>
     <addaction name="actionExit"/>
    </widget>
-   <widget class="QMenu" name="menuAbout">
+   <widget class="QMenu" name="menuPreferences">
     <property name="title">
      <string>Preferences</string>
     </property>
@@ -66,6 +66,7 @@
     <property name="title">
      <string>About</string>
     </property>
+    <addaction name="actionAbout_SVGViewer"/>
    </widget>
    <widget class="QMenu" name="menuRender">
     <property name="title">
@@ -75,7 +76,7 @@
    </widget>
    <addaction name="menuTr_SVG_Viewer"/>
    <addaction name="menuRender"/>
-   <addaction name="menuAbout"/>
+   <addaction name="menuPreferences"/>
    <addaction name="menuHelp"/>
   </widget>
   <action name="actionOpen">
@@ -115,6 +116,11 @@
    </property>
    <property name="text">
     <string>Draw background</string>
+   </property>
+  </action>
+  <action name="actionAbout_SVGViewer">
+   <property name="text">
+    <string>About SVGViewer</string>
    </property>
   </action>
  </widget>

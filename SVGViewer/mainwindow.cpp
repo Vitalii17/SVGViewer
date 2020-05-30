@@ -1,11 +1,13 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "defines.h"
 
 #include <QDebug>
 #include <QFileDialog>
 #include <QFileInfo>
 #include <QColorDialog>
 #include <QPalette>
+#include <QMessageBox>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -115,6 +117,13 @@ void MainWindow::on_actionReset_to_default_BackgroundColor_triggered()
 void MainWindow::on_actionDraw_background_triggered(bool checked)
 {
     m_pSvgView->setViewBackground(checked);
+}
+
+void MainWindow::on_actionAbout_SVGViewer_triggered()
+{
+    QString aboutTxt = "SVGViwer " + QString(APP_VERSION) + "\n" +
+            "Built on " + QString(BUILDDATE) + " " + QString(BUILDTIME);
+    QMessageBox::about(this, "About SVGViewer", aboutTxt);
 }
 
 void MainWindow::keyPressEvent(QKeyEvent *event)

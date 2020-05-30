@@ -20,8 +20,8 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
-    explicit MainWindow(QWidget *parent = 0);
-    ~MainWindow();
+    explicit MainWindow(QWidget *parent = Q_NULLPTR);
+    ~MainWindow() override;
 
 public slots:
     void openFile(const QString &path);
@@ -29,9 +29,12 @@ public slots:
 private slots:
     void on_actionExit_triggered();
     void on_actionOpen_triggered();
+
     void on_actionChangeBackgroundColor_triggered();
     void on_actionReset_to_default_BackgroundColor_triggered();
     void on_actionDraw_background_triggered(bool checked);
+
+    void on_actionAbout_SVGViewer_triggered();
 
 protected:
     void keyPressEvent(QKeyEvent *event) override;
