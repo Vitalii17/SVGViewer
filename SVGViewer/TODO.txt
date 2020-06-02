@@ -13,4 +13,4 @@
 - Linux package.
 - Windows installer.
 - Different deploy dirs for win/linux/etc.
-- Symbian version.
+- File associasion.
